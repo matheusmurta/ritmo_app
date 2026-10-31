@@ -1,9 +1,44 @@
-node_modules
-dist
-dev-dist
-coverage
+# Dependencies
+node_modules/
+.pnpm-store/
+
+# Build and PWA
+dist/
+dist-ssr/
+dev-dist/
+*.local
+
+# Tests
+coverage/
+playwright-report/
+test-results/
+blob-report/
+
+# Logs
 *.log
+npm-debug.log*
+yarn-debug.log*
+pnpm-debug.log*
+
+# Tool caches
+.vite/
+.eslintcache
+*.tsbuildinfo
+.cache/
+.temp/
+.tmp/
+
+# Env and secrets
+.env
+.env.*
+!.env.example
+
+# Editors and OS
+.vscode/*
+!.vscode/extensions.json
+.idea/
+*.suo
+*.sw?
 .DS_Store
-playwright-report
-test-results
-.vite
+Thumbs.db
+Desktop.ini
